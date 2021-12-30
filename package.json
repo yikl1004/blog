@@ -1,0 +1,16 @@
+{
+    "name": "blog-by-vuepress",
+    "version": "1.0.0",
+    "description": "myungki`s blog",
+    "main": "index.js",
+    "author": "yikl1004@gmail.com",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "docs:dev": "vuepress dev --port 8000",
+        "docs:build": "vuepress build"
+    },
+    "devDependencies": {
+        "vuepress": "^1.9.5"
+    }
+}
