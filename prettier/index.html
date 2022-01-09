@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>.prettierrc.js | dev.c`s blog</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    
+    <meta name="description" content="Front-end 기술을 다룹니다.">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.b6bfb1ac.css" as="style"><link rel="preload" href="/blog/assets/js/app.dd6f45d3.js" as="script"><link rel="preload" href="/blog/assets/js/2.86cae3e0.js" as="script"><link rel="preload" href="/blog/assets/js/8.c0ea9cd6.js" as="script"><link rel="prefetch" href="/blog/assets/js/3.34e0e834.js"><link rel="prefetch" href="/blog/assets/js/4.2b93dc1f.js"><link rel="prefetch" href="/blog/assets/js/5.f064699d.js"><link rel="prefetch" href="/blog/assets/js/6.258c7694.js"><link rel="prefetch" href="/blog/assets/js/7.73b19b4c.js"><link rel="prefetch" href="/blog/assets/js/9.5ac4fcbc.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.b6bfb1ac.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://avatars.githubusercontent.com/u/7499652?v=4" alt="dev.c`s blog" class="logo"> <span class="site-name can-hide">dev.c`s blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>.prettierrc.js</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/prettier/#scheme" class="sidebar-link">Scheme</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="prettierrc-js"><a href="#prettierrc-js" class="header-anchor">#</a> .prettierrc.js</h1> <h2 id="scheme"><a href="#scheme" class="header-anchor">#</a> Scheme</h2> <div class="language-jsdoc extra-class"><pre class="language-jsdoc"><code><span class="token punctuation">{</span>
+    /**
+     * <span class="token keyword">@description</span> Include parentheses around a sole arrow function parameter.
+     * <span class="token keyword">@default</span> &quot;always&quot;
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token string">'always'</span> <span class="token operator">|</span> <span class="token string">'avoid'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+     *    - always: Always include parens. Example: `(x) =&gt; x`
+     *    - avoid: Omit parens when possible. Example: `x =&gt; x`
+     */
+    arrowParens: &quot;always&quot;,
+    /**
+     * <span class="token keyword">@description</span> Put &gt; of opening tags on the last line instead of on a new line.
+     * <span class="token keyword">@default</span> false
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>boolean<span class="token punctuation">}</span></span>
+     */
+    bracketSameLine: false,
+    /**
+     * <span class="token keyword">@description</span> Print spaces between brackets.
+     * <span class="token keyword">@default</span> true
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>boolean<span class="token punctuation">}</span></span>
+     */
+    bracketSpacing: true,
+    /**
+     * <span class="token keyword">@description</span>
+     * Print (to stderr) where a cursor at the given position would move to after formatting.
+     * This option cannot be used with --range-start and --range-end.
+     * <span class="token keyword">@default</span> -1
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>number<span class="token punctuation">}</span></span>
+     */
+    cursorOffset: -1,
+    /**
+     * <span class="token keyword">@description</span> Control how Prettier formats quoted code embedded in the file.
+     * <span class="token keyword">@default</span> &quot;auto&quot;
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token string">'auto'</span> <span class="token operator">|</span> <span class="token string">'off'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+     *    - auto: Format embedded code if Prettier can automatically identify it.
+     *    - off: Never automatically format embedded code.
+     */
+    embeddedLanguageFormatting: &quot;auto&quot;,
+    /**
+     * <span class="token keyword">@description</span> Which end of line characters to apply.
+     * <span class="token keyword">@default</span> &quot;lf&quot;
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token string">'lf'</span> <span class="token operator">|</span> <span class="token string">'crlf'</span> <span class="token operator">|</span> <span class="token string">'cr'</span> <span class="token operator">|</span> <span class="token string">'auto'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+     *    - lf: Line Feed only (\\n), common on Linux and macOS as well as inside git repos
+     *    - crlf: Carriage Return + Line Feed characters (\\r\\n), common on Windows
+     *    - cr: Carriage Return character only (\\r), used very rarely
+     *    - auto: Maintain existing\n(mixed values within one file are normalised by looking at what's used after the first line)
+     */
+    endOfLine: &quot;lf&quot;,
+    /**
+     * <span class="token keyword">@description</span> Specify the input filepath. This will be used to do parser inference.
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>string<span class="token punctuation">}</span></span>
+     */
+    // filepath: '',
+    /**
+     * <span class="token keyword">@description</span> How to handle whitespaces in HTML.
+     * <span class="token keyword">@default</span> 'css''
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token string">'css'</span> <span class="token operator">|</span> <span class="token string">'strict'</span> <span class="token operator">|</span> <span class="token string">'ignore'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+     *    - css: Respect the default value of CSS display property.
+     *    - strict: Whitespaces are considered sensitive.
+     *    - ignore: Whitespaces are considered insensitive.
+     */
+    htmlWhitespaceSensitivity: &quot;css&quot;,
+    /**
+     * <span class="token keyword">@description</span> Insert @format pragma into file's first docblock comment.
+     * <span class="token keyword">@default</span> false
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>boolean<span class="token punctuation">}</span></span>
+     */
+    insertPragma: false,
+    /**
+     * <span class="token keyword">@description</span> Use single quotes in JSX.
+     * <span class="token keyword">@default</span> false
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>boolean<span class="token punctuation">}</span></span>
+     */
+    jsxSingleQuote: false,
+    /**
+     * <span class="token keyword">@description</span> Which parser to use.
+     * <span class="token keyword">@default</span> ''
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span><span class="token punctuation">(</span>
+     <span class="token operator">*</span>    <span class="token string">&quot;flow&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;babel&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;espree&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;meriyah&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;graphql&quot;</span> <span class="token operator">|</span>
+     <span class="token operator">*</span>    <span class="token string">&quot;markdown&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;mdx&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;vue&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;yaml&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;glimmer&quot;</span> <span class="token operator">|</span>
+     <span class="token operator">*</span>    <span class="token string">&quot;html&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;angular&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;lwc&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;css&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;less&quot;</span> <span class="token operator">|</span>
+     <span class="token operator">*</span>    <span class="token string">&quot;scss&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;json&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;json5&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;typescript&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;babel-flow&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;babel-ts&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;json-stringify&quot;</span>
+     <span class="token operator">*</span>    string
+     <span class="token operator">*</span> <span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+     */
+    // parser: &quot;&quot;,
+    /**
+     * <span class="token keyword">@description</span> Custom directory that contains prettier plugins in node_modules subdirectory.
+     * Overrides default behavior when plugins are searched relatively to the location of Prettier.\nMultiple values are accepted.
+     * <span class="token keyword">@default</span> []
+     * <span class="token keyword">@param</span> <span class="token class-name"><span class="token punctuation">{</span>string<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span>
+     */
+    pluginSearchDirs: [],
+    /**
+     * <span class="token keyword">@description</span> Add a plugin. Multiple plugins can be passed as separate `--plugin`s.
+     * <span class="token keyword">@default</span> []
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>string<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span>
+     */
+    plugins: [],
+    /**
+     * <span class="token keyword">@description</span> The line length where Prettier will try wrap.
+     * <span class="token keyword">@default</span> 80
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>number<span class="token punctuation">}</span></span>
+     */
+    printWidth: 80,
+    /**
+     * <span class="token keyword">@description</span> How to wrap prose.
+     * <span class="token keyword">@default</span> &quot;preserve&quot;
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token string">'always'</span> <span class="token operator">|</span> <span class="token string">'never'</span> <span class="token operator">|</span> <span class="token string">'preserve'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+     *    - always Wrap prose if it exceeds the print width.
+     *    - never Do not wrap prose.
+     *    - preserve Wrap prose as-is.
+     */
+    proseWrap: &quot;preserve&quot;,
+    /**
+     * <span class="token keyword">@description</span> Change when properties in objects are quoted.
+     * <span class="token keyword">@default</span> &quot;as-needed&quot;
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token string">'as-needed'</span> <span class="token operator">|</span> <span class="token string">'consistent'</span> <span class="token operator">|</span> <span class="token string">'preserve'</span> <span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+     *    - as-needed: Only add quotes around object properties where required.
+     *    - consistent: If at least one property in an object requires quotes, quote all properties.
+     *    - preserve: Respect the input use of quotes in object properties.
+     */
+    quoteProps: &quot;as-needed&quot;,
+    /**
+     * <span class="token keyword">@description</span> Format code ending at a given character offset (exclusive).
+     * The range will extend forwards to the end of the selected statement.
+     * This option cannot be used with --cursor-offset.
+     * <span class="token keyword">@default</span> null
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>number <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">}</span></span>
+     */
+    rangeEnd: null,
+    /**
+     * <span class="token keyword">@description</span> Format code starting at a given character offset.
+     * The range will extend backwards to the start of the first line containing the selected statement.
+     * This option cannot be used with --cursor-offset.
+     * <span class="token keyword">@param</span> <span class="token class-name"><span class="token punctuation">{</span>number<span class="token punctuation">}</span></span>
+     */
+    rangeStart: 0,
+    /**
+     * <span class="token keyword">@description</span> Require either '@prettier' or '@format' to be present in the file's first docblock comment
+     * in order for it to be formatted.
+     * <span class="token keyword">@default</span> false
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>boolean<span class="token punctuation">}</span></span>
+     */
+    requirePragma: false,
+    /**
+     * <span class="token keyword">@description</span> Print semicolons.
+     * <span class="token keyword">@default</span> true
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>boolean<span class="token punctuation">}</span></span>
+     */
+    semi: true,
+    /**
+     * <span class="token keyword">@description</span> Use single quotes instead of double quotes.
+     * <span class="token keyword">@default</span> false
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>boolean<span class="token punctuation">}</span></span>
+     */
+    singleQuote: false,
+    /**
+     * <span class="token keyword">@description</span> Number of spaces per indentation level.
+     * <span class="token keyword">@default</span> 2
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>number<span class="token punctuation">}</span></span>
+     */
+    tabWidth: 4,
+    /**
+     * <span class="token keyword">@description</span> Print trailing commas wherever possible when multi-line.
+     * <span class="token keyword">@default</span> 'es5'
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token string">'es5'</span> <span class="token operator">|</span> <span class="token string">'none'</span> <span class="token operator">|</span> <span class="token string">'all'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+     *    - es5: Trailing commas where valid in ES5 (objects, arrays, etc.)
+     *    - none: description&quot;: &quot;No trailing commas.
+     *    - all: Trailing commas wherever possible (including function arguments).
+     */
+    trailingComma: &quot;es5&quot;,
+    /**
+     * <span class="token keyword">@description</span> Indent with tabs instead of spaces.
+     * <span class="token keyword">@default</span> false
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>boolean<span class="token punctuation">}</span></span>
+     */
+    useTabs: true,
+    /**
+     * <span class="token keyword">@description</span> Indent script and style tags in Vue files.
+     * <span class="token keyword">@default</span> false
+     * <span class="token keyword">@type</span> <span class="token class-name"><span class="token punctuation">{</span>boolean<span class="token punctuation">}</span></span>
+     */
+    vueIndentScriptAndStyle: false,
+<span class="token punctuation">}</span>;
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.dd6f45d3.js" defer></script><script src="/blog/assets/js/2.86cae3e0.js" defer></script><script src="/blog/assets/js/8.c0ea9cd6.js" defer></script>
+  </body>
+</html>
